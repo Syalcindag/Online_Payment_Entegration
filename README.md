@@ -8,7 +8,7 @@ Web sitenizde satış yapmak isterseniz bu servisleri kullanabilirsiniz. Yapman�
 ## Başlayalım..
 İlk olarak [Wirecard](https://www.wirecard.com.tr/) 'ın sitsine girelim. Geliştirici bölümüne tıklayalım.
 
-![Geliştirici](public\chrome_o629RQyMbg.png)
+![Geliştirici](public/chrome_o629RQyMbg.png)
 
 Daha sonra Entegrasyona başlaya tıklayarak devam edelim. Menü kısmından SanalPos Çözümleri kısmından hangi türde ödeme istediğinizi belirleyin.
 
@@ -24,9 +24,15 @@ Ben `Dinamik Ortak Ödeme` seçeneği üzerinden devam edeceğim.
 ### Şimdi Kodlamaya Başlayalım..
 
 Wirecard servisi bizden xml tarzında request ister ve sonucunda response döndürür. Yani bizden kullanıcı adı, ödenecek ücret, işlem başarılı ve başarıszı olduğğu durumlarda gidilmesi gereken sayfa uzantı  bilgilerini xml şeklinde servise request yapmamızı ister.
+
+
 ![request](public/chrome_GaNS9qUj4S.png)
  Bunu sonucunda hata var ise hata mesajını, hata yok ise bize responseUrl gönderir.
+
+
  ![response](public/chrome_iaJysVeRul.png)
+
+
   Bu gelen url ile sitenin sunduğu ödeme sayfasına yönlendir. Bu kısımdan sonra gerçekleşecek işlemler wirekard ile kullanıcı arasındadır. 
 
   Bir çok yazılım dilleri ile projenize entegre edebilirsiniz. Ben php de nasıl yapıldığını anlatacam.
