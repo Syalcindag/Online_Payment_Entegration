@@ -27,6 +27,8 @@ Wirecard servisi bizden xml tarzında request ister ve sonucunda response dönd�
 
 
 ![request](public/chrome_GaNS9qUj4S.png)
+
+
  Bunu sonucunda hata var ise hata mesajını, hata yok ise bize responseUrl gönderir.
 
 
